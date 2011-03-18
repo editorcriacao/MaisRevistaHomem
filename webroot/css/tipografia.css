@@ -1,0 +1,236 @@
+a{
+    text-decoration: none;
+    color: #000;
+    font-family: arial;
+    font-size: 11px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+h1{
+    font-family: arial;
+    font-size: 28px;
+    color: #97bf0d;
+    padding: 10px 0;
+}
+
+h3{
+    font-family: arial;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333333;
+}
+
+p{
+    font-family: arial;
+    font-size: 12px;
+    padding: 10px 0;
+    line-height: 150%;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-right: 5px;
+}
+
+span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+
+
+#destaques-box-title a{
+    font-size: 14px;
+}
+
+#menu-inferior-header li a, #menu-inferior-header-2 li a{
+    font-family: arial;
+    font-size: 11px;
+    text-decoration: none;
+    color: #646567;
+    padding: 0px;
+}
+
+#menu-inferior-header-2 li{
+    font-family: arial;
+    font-size: 11px;
+    text-decoration: none;
+    color: #646567;
+}
+
+#menu-inferior-header li a:hover, #menu-inferior-header-2 li a:hover{
+    text-decoration: underline;
+}
+
+#menu-superior-header li, #menu-inferior-header li{
+    font-family: arial;
+    font-size: 11px;
+    color: #646567;
+}
+
+#menu-superior-header li a{
+    font-family: arial;
+    font-size: 11px;
+    text-decoration: none;
+    position: relative;
+    top: 2px;
+    padding: 5px;
+}
+
+#menu-superior-header li a:hover{
+    text-decoration: underline;
+}
+
+.central-assinante-link{
+    color:#004d77;
+}
+
+.assine-link{
+    color: #a2de00;
+}
+
+/* MENU INFERIOR */
+
+#menu-inferior{
+
+
+}
+
+#menu-inferior li a{
+    text-decoration: none;
+    color: #000;
+    font-family: arial;
+    font-size: 12px;
+    padding:10px 18px;
+    display: inline-block;
+    font-weight: bold;
+    background-color: #fff;
+
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    
+}
+
+#menu-inferior li a:hover{
+    background-color: #baff00;
+}
+
+#subMenu-menu-inferior li a{
+    display: block;
+    border-bottom: 1px solid #004c77;
+    text-decoration: none;
+    color: #000;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    *margin-top: -1px
+}
+
+#lancamento-revistas h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #001c35;
+}
+
+#lancamento-revistas p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+    margin-top: 6px;
+    line-height: 14px;
+    *margin-bottom: 0;
+}
+
+#subMenu-menu-inferior li a:hover{
+    background-color: #baff00;
+}
+
+#sub-menu{
+    *width: 78px;
+    *border-right: 3px solid #001c35;
+    *position: relative;
+    *top: -1px;
+    *height: 12px;
+}
+
+
+/* FOOTER */
+
+#footer{
+    font-family: arial;
+    font-size: 12px;
+}
+
+#rodape-conteudo a{
+    color: #000;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+#rodape-conteudo a:hover{
+    text-decoration: underline;
+}
+
+/*Home - ultimas matérias*/
+
+#ultimas-materias li h5{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size:10px;
+    font-weight:bold;
+    padding-bottom: 3px;
+}
+
+#ultimas-materias li a{
+    margin-top: 7px;
+    color: #001c35;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    ;
+}
+
+
+/* Home - Ultimas Matérias por seção*/
+
+#noticias-por-secao li a h4 {
+    margin-top: 3px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+}
+
+#noticias-por-secao li p {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    color: #000000;
+    font-weight:bold;
+    padding-bottom: 3px;
+}
+
+
+/*LINK PARA MAIS MATÉRIAS COM LINHA*/
+
+
+#mais-materias a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size:9px;
+    font-weight:bold;
+    text-align: right;
+    margin-left: 5px;
+}
+
+#mais-materias a:hover{
+    text-decoration: underline;
+}

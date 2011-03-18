@@ -1,0 +1,50 @@
+.mail{
+    background-image: url(../img/mail.png);
+    width: 26px;
+    height: 19px;
+    display: block;
+    cursor: pointer;
+    margin-right: 1px;
+}
+
+.mail:hover{
+    background-image: url(../img/mail-c.png);
+}
+
+.linkendin{
+    background-image: url(../img/linkindi-icon.png);
+    width: 17px;
+    height: 16px;
+    display: block;
+    cursor: pointer;
+        margin-right: 1px;
+}
+
+.linkendin:hover{
+     background-image: url(../img/linkindi-icon-c.png);
+}
+
+.twitter{
+    background-image: url(../img/twiiter.png);
+    width: 19px;
+    height: 19px;
+    display: block;
+    cursor: pointer;
+        margin-right: 1px;
+}
+
+.twitter:hover{
+     background-image: url(../img/twiiter-c.png);
+}
+
+.rss{
+    background-image: url(../img/feed.png);
+    width: 23px;
+    height: 19px;
+    display: block;
+    cursor: pointer;
+}
+
+.rss:hover{
+     background-image: url(../img/feed-c.png);
+}

@@ -1,0 +1,495 @@
+/* 
+    Document   : estrutura
+    Created on : 15/03/2011, 14:23:50
+    Author     : Administrador
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+body{
+    background-image: url(../img/bg-fundo.png);
+}
+
+
+
+#header{
+    background-color: #fff;
+    width: 100%;
+    height: 130px;
+}
+
+#header-caixa{
+    width: 905px;
+    margin: 0 auto;
+    height: 130px;
+}
+
+#header img{
+    height: 130px;
+}
+
+#caixa-superior-header{
+    text-align: right;
+    width: 320px;
+    padding: 5px;
+    margin-top: -85px;
+    margin-left: 66%;
+}
+
+#menu-superior-header li,
+#login li,
+#menu-inferior-header li,
+#menu-inferior-header-2 li,
+#menu-superior-header li, #icon li{
+    float: left;
+    display: block;
+}
+
+#menu-inferior-header{
+    margin-left: 27px;
+    *margin-left: 49px;
+}
+
+#menu-inferior-header-2{
+    margin-left: -80px;
+}
+
+#menu-superior-header{
+    margin-top: 5px;
+    *margin-top: 2px;
+    margin-left: 25px;
+    *margin-left: 30px;
+}
+
+#menu-inferior-header li{
+    margin-top: 5px;
+}
+
+#login{
+    height: 30px;
+    margin-left: -15px;
+    *position: absolute;
+    *margin-left: -355px;
+    *margin-top: 15px;
+}
+
+#login li input[type=text], #login li input[type=password]{
+    border: 1px solid #666;
+    width: 115px;
+    padding: 2px;
+    color: #646567;
+    margin-right: 2px;
+
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+#login li input[type=submit]{
+    background-image: url(../img/bg-buttom.png);
+    border: 0;
+    color:#003552;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 10px;
+    *margin-top: 5px;
+
+    height: 20px;
+    cursor: pointer;
+
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+#login li input[type=submit]:hover{
+    background-image: url(../img/bg-botao-hover.png);
+}
+
+#busca-div li input[type=text]{
+    border: 1px solid #666;
+    padding: 3px;
+    width: 190px;
+    color: #646567;
+    margin-right: 2px;
+
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+
+}
+
+#busca-div li input[type=submit]{
+    border: 0;
+    display: block;
+    height: 24px;
+    width: 35px;
+    background-image: url(../img/lupa-busca.png);
+    cursor: pointer;
+    margin-top: 3px;
+    *margin-top: 4px;
+}
+
+#busca-div li input[type=submit]:hover{
+    background-image: url(../img/lupa-busca-hover.png);
+}
+
+#busca-div{
+    margin-left: 55px;
+    height: 27px;
+    *height: 29px;
+    *margin-left: 58px;
+}
+
+#busca-div li{
+    display: inline;
+    float: left;
+}
+
+#caixa-inferior{
+    margin: 0 auto;
+    width: 905px;
+    padding-top: 3px;
+}
+
+/* MENU INFERIOR */
+#menu-inferior{
+    width: 905px;
+    padding-bottom: 3px;
+
+}
+
+#menu-inferior li{
+    display: inline;
+}
+
+#subMenu-menu-inferior{
+    display: none;
+    position: absolute;
+    width: 230px;
+    margin-left: 288px;
+    border: 2px solid #001c35;
+    z-index: 100;
+    *margin-left: -118px;
+    *margin-top: 33px;
+
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+#menu-inferior li:hover #subMenu-menu-inferior { display: block; }
+
+#menu-inferior li #subMenu-menu-inferior li{
+    display: block;
+    
+}
+
+.seta{
+    background-image: url(../img/seta-menu.png);
+    width: 10px;
+    height: 6px;
+    display: inline-block;
+    *margin-top: -6px;
+}
+
+/* BANNER */
+
+#banner-superior{
+    margin: 0 auto;
+    background-color: #fff;
+    width: 905px;
+    height: 120px;
+
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+
+/* CONTENT */
+
+#content{
+    width: 905px;
+    height: 100%;
+    min-height: 880px;
+    background-color: #fff;
+    margin: 162px auto 30px auto;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+#conteudo{
+    width: 640px;
+    margin-top: 1px;
+    background-color: #fff;
+    padding: 10px;
+    height: 100%;
+    min-height: 100%;
+    
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+
+#lateral-direita{
+    float: right;
+    background-color: #fff;
+    width: 232px;
+    padding: 4px;
+    height: 100%;
+    min-height: 711px;
+    *margin-top: 1px;
+    display: block;
+}
+
+#lancamento-revistas input[type=text]{
+
+    border: 1px solid #666;
+    padding: 3px;
+    color: #646567;
+    margin-right: 2px;
+    margin-top: 4px;
+    font-size: 11px;
+
+    *height: 15px;
+    *widht: 15px;
+
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+
+}
+
+#lancamento-revistas li{
+    margin-left: -5px;
+}
+
+#lancamento-revistas li input[type=submit]{
+    background-image: url(../img/bg-buttom.png);
+    border: 0;
+    padding: 3px 6px;
+    font-size: 11px;
+    margin-top: 4px;
+    margin-left: 5px;
+    height: 20px;
+
+    *padding: 0;
+    *margin-top:6px;
+    color: #001c35;
+    cursor: pointer;
+
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+}
+
+#lancamento-revistas li input[type=submit]:hover {
+    background-image: url(../img/bg-botao-hover.png);
+}
+
+#lancamento-revistas li{
+    display: inline;
+    float: left;
+}
+
+#banners-lateral{
+    
+}
+
+#banners-lateral li{
+    padding-top: 20px;
+    margin: 40px 0 0 45px;
+}
+
+#linha-divisao-lateral{
+   height: 5px;
+   display: block;
+   background-color: #baff00;
+}
+
+
+
+/* FOOTER */
+#footer{
+    background-image: url(../img/bg-rodape.png);
+    width: 100%;
+    height: 44px;
+}
+
+#footer-caixa{
+    width: 905px;
+    margin: 0 auto;
+}
+
+#footer #copy{
+    padding-top: 13px;
+}
+
+#footer ul li{
+    display: inline;
+    float: left;
+}
+
+#rodape-conteudo{
+    float: right;
+}
+
+#rodape-conteudo li{
+    display: inline;
+    padding-right: 0px;
+}
+
+/*Home - Destaques*/
+
+#destaques-home img {
+    width: 626px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+
+/*Home - ultimas matÃ©rias*/
+
+#ultimas-materias li{
+    list-style: none;
+    display:inline;
+    float: left;
+    padding-right: 11px;
+    margin-bottom: 10px;
+    width: 196px
+}
+
+#ultimas-materias li img{
+    border:1px solid #CCC;
+    padding: 1px;
+    width: 197px;
+    height: 110px;
+}
+
+
+/* Home - Ultimas MatÃ©rias por seÃ§Ã£o*/
+#noticias-por-secao li {
+    list-style: none;
+    display: inline;
+    float: left;
+    width: 295px;
+    padding-right: 13px;
+
+}
+
+#noticias-por-secao li img{
+    border:1px solid #CCC;
+    padding: 1px;
+    width: 120px;
+    height: 67px;
+    float: left;
+    margin-right: 8px;
+}
+
+
+/*LINHA DE DIVISÃƒO*/
+
+#linha-divisao {
+    border-top: 1px solid #ccc;
+    width: 626px;
+    float: left;
+    margin:18px 0;
+
+}
+
+.linha-divisao {
+    border-top: 1px solid #ccc;
+    width: 626px;
+    float: left;
+    margin:18px 0;
+
+}
+
+.linha-divisao-2 {
+    border-top: 1px solid #ccc;
+    width: 626px;
+    float: left;
+    padding: 3px;
+}
+
+/*LINK PARA MAIS MATÃ‰RIAS COM LINHA*/
+
+#linha-divisao-mais-materias {
+    border-top: 1px solid #ccc;
+    width: 551px;
+    float: left;
+    margin:18px 0;
+
+}
+
+#mais-materias {
+    top: 382px;
+    right: -137px;
+    position: relative;
+}
+
+input[type=text], input[type=password]{
+
+    border: 1px solid #666;
+    padding: 3px;
+    color: #646567;
+    margin-right: 2px;
+    margin-top: 4px;
+    font-size: 11px;
+
+    *height: 15px;
+    *widht: 15px;
+
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+
+}
+
+input[type=submit]{
+    background-image: url(../img/bg-buttom.png);
+    border: 0;
+    padding: 3px 6px;
+    font-size: 11px;
+    margin-top: 4px;
+    margin-left: 5px;
+    height: 20px;
+
+    *padding: 0;
+    *margin-top:6px;
+    color: #001c35;
+    cursor: pointer;
+
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+}
+
+input[type=submit]:hover {
+    background-image: url(../img/bg-botao-hover.png);
+}
+
+.caixa-branca-titulos {
+    background-color: white;
+    float: left;
+    padding: 4px;
+    position: relative;
+    top:24px;
+}
+
+#linha-divisao-5px {
+    border-top: 5px solid #ccc;
+    width: 626px;
+    float: left;
+    margin-top: 10px;
+
+}
