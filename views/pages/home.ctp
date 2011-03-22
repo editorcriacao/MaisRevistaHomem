@@ -77,56 +77,56 @@
 
 
                     <ul id="noticias-por-secao">
-        <?php $ultimasComportamento = $this->requestAction('artigos/ultimasMaterias/11') ?>
+        <?php $ultimasSaude = $this->requestAction(array('controller'=>'artigos', 'action'=>'ultimasSaude')) ?>
                         <li>
-            <?php echo $this->Html->image('http://www.editorcriacao.com.br/gerenciadorEditor/app/webroot/img/fotos_artigos/' . $ultimasComportamento['Artigo']['foto']) ?>
-                            <p><?php echo Inflector::stringToUpper($ultimasComportamento['Editoria']['nomeEditoria']) ?></p>
-                        <a href="<?php echo $this->Html->url(array('controller' => 'artigos', 'action' => 'ver', $ultimasComportamento['Artigo']['id'], Inflector::slug($ultimasComportamento['Artigo']['titulo']))) ?>"><h4><?php echo $ultimasComportamento['Artigo']['titulo'] ?></h4></a>
+            <?php echo $this->Html->image('http://www.editorcriacao.com.br/gerenciadorEditor/app/webroot/img/fotos_artigos/' . $ultimasSaude['Artigo']['foto']) ?>
+                            <p><?php echo Inflector::stringToUpper($ultimasSaude['Editoria']['nomeEditoria']) ?></p>
+                        <a href="<?php echo $this->Html->url(array('controller' => 'artigos', 'action' => 'ver', $ultimasSaude['Artigo']['id'], Inflector::slug($ultimasSaude['Artigo']['titulo']))) ?>"><h4><?php echo $ultimasSaude['Artigo']['titulo'] ?></h4></a>
 
                     </li>
-        <?php $ultimasCarreira = $this->requestAction('artigos/ultimasMaterias/13') ?>
+        <?php $ultimasVisual = $this->requestAction(array('controller'=>'artigos', 'action'=>'ultimasVisual')) ?>
                         <li>
-            <?php echo $this->Html->image('http://www.editorcriacao.com.br/gerenciadorEditor/app/webroot/img/fotos_artigos/' . $ultimasCarreira['Artigo']['foto']) ?>
-                         <p><?php echo Inflector::stringToUpper($ultimasCarreira['Editoria']['nomeEditoria']) ?></p>
-                            <a href="<?php echo $this->Html->url(array('controller' => 'artigos', 'action' => 'ver', $ultimasCarreira['Artigo']['id'], Inflector::slug($ultimasCarreira['Artigo']['titulo']))) ?>"><h4><?php echo $ultimasCarreira['Artigo']['titulo'] ?></h4></a>
+            <?php echo $this->Html->image('http://www.editorcriacao.com.br/gerenciadorEditor/app/webroot/img/fotos_artigos/' . $ultimasVisual['Artigo']['foto']) ?>
+                         <p><?php echo Inflector::stringToUpper($ultimasVisual['Editoria']['nomeEditoria']) ?></p>
+                            <a href="<?php echo $this->Html->url(array('controller' => 'artigos', 'action' => 'ver', $ultimasVisual['Artigo']['id'], Inflector::slug($ultimasVisual['Artigo']['titulo']))) ?>"><h4><?php echo $ultimasVisual['Artigo']['titulo'] ?></h4></a>
 
                     </li>
 
                 </ul>
                 <div class="linha-divisao"></div>
                 <ul id="noticias-por-secao">
-        <?php $ultimasMercado = $this->requestAction('artigos/ultimasMaterias/17') ?>
+        <?php $ultimasCarro = $this->requestAction(array('controller'=>'artigos', 'action'=>'ultimasCarro')) ?>
                         <li>
-            <?php echo $this->Html->image('http://www.editorcriacao.com.br/gerenciadorEditor/app/webroot/img/fotos_artigos/' . $ultimasMercado['Artigo']['foto']) ?>
-                        <p><?php echo Inflector::stringToUpper($ultimasMercado['Editoria']['nomeEditoria']) ?></p>
-                            <a href="<?php echo $this->Html->url(array('controller' => 'artigos', 'action' => 'ver', $ultimasMercado['Artigo']['id'], Inflector::slug($ultimasMercado['Artigo']['titulo']))) ?>"><h4><?php echo $ultimasMercado['Artigo']['titulo'] ?></h4></a>
+            <?php echo $this->Html->image('http://www.editorcriacao.com.br/gerenciadorEditor/app/webroot/img/fotos_artigos/' . $ultimasCarro['Artigo']['foto']) ?>
+                        <p><?php echo Inflector::stringToUpper($ultimasCarro['Editoria']['nomeEditoria']) ?></p>
+                            <a href="<?php echo $this->Html->url(array('controller' => 'artigos', 'action' => 'ver', $ultimasCarro['Artigo']['id'], Inflector::slug($ultimasCarro['Artigo']['titulo']))) ?>"><h4><?php echo $ultimasCarro['Artigo']['titulo'] ?></h4></a>
 
                     </li>
 
-        <?php $ultimasBemEstar = $this->requestAction('artigos/ultimasMaterias/19') ?>
+        <?php $ultimasEsporte = $this->requestAction(array('controller'=>'artigos', 'action'=>'ultimasEsporte')) ?>
                         <li>
-            <?php echo $this->Html->image('http://www.editorcriacao.com.br/gerenciadorEditor/app/webroot/img/fotos_artigos/' . $ultimasBemEstar['Artigo']['foto']) ?>
-                       <p><?php echo Inflector::stringToUpper($ultimasBemEstar['Editoria']['nomeEditoria']) ?></p>
-                            <a href="<?php echo $this->Html->url(array('controller' => 'artigos', 'action' => 'ver', $ultimasBemEstar['Artigo']['id'], Inflector::slug($ultimasBemEstar['Artigo']['titulo']))) ?>"><h4><?php echo $ultimasBemEstar['Artigo']['titulo'] ?></h4></a>
+            <?php echo $this->Html->image('http://www.editorcriacao.com.br/gerenciadorEditor/app/webroot/img/fotos_artigos/' . $ultimasEsporte['Artigo']['foto']) ?>
+                       <p><?php echo Inflector::stringToUpper($ultimasEsporte['Editoria']['nomeEditoria']) ?></p>
+                            <a href="<?php echo $this->Html->url(array('controller' => 'artigos', 'action' => 'ver', $ultimasEsporte['Artigo']['id'], Inflector::slug($ultimasEsporte['Artigo']['titulo']))) ?>"><h4><?php echo $ultimasEsporte['Artigo']['titulo'] ?></h4></a>
 
                     </li>
                 </ul>
                 <div class="linha-divisao"></div>
 
                 <ul id="noticias-por-secao">
-        <?php $ultimasAtitude = $this->requestAction('artigos/ultimasMaterias/29') ?>
+        <?php $ultimasCiencia = $this->requestAction(array('controller'=>'artigos', 'action'=>'ultimasCiencia')) ?>
                         <li>
-            <?php echo $this->Html->image('http://www.editorcriacao.com.br/gerenciadorEditor/app/webroot/img/fotos_artigos/' . $ultimasAtitude['Artigo']['foto']) ?>
-                        <p><?php echo Inflector::stringToUpper($ultimasAtitude['Editoria']['nomeEditoria']) ?></p>
-                            <a href="<?php echo $this->Html->url(array('controller' => 'artigos', 'action' => 'ver', $ultimasAtitude['Artigo']['id'], Inflector::slug($ultimasAtitude['Artigo']['titulo']))) ?>"><h4><?php echo $ultimasAtitude['Artigo']['titulo'] ?></h4></a>
+            <?php echo $this->Html->image('http://www.editorcriacao.com.br/gerenciadorEditor/app/webroot/img/fotos_artigos/' . $ultimasCiencia['Artigo']['foto']) ?>
+                        <p><?php echo Inflector::stringToUpper($ultimasCiencia['Editoria']['nomeEditoria']) ?></p>
+                            <a href="<?php echo $this->Html->url(array('controller' => 'artigos', 'action' => 'ver', $ultimasCiencia['Artigo']['id'], Inflector::slug($ultimasCiencia['Artigo']['titulo']))) ?>"><h4><?php echo $ultimasCiencia['Artigo']['titulo'] ?></h4></a>
 
                     </li>
 
-        <?php $ultimasLideranca = $this->requestAction('artigos/ultimasMaterias/37') ?>
+        <?php $ultimasSexo = $this->requestAction(array('controller'=>'artigos', 'action'=>'ultimasSexo')) ?>
                         <li>
-            <?php echo $this->Html->image('http://www.editorcriacao.com.br/gerenciadorEditor/app/webroot/img/fotos_artigos/' . $ultimasLideranca['Artigo']['foto']) ?>
-                        <p><?php echo Inflector::stringToUpper($ultimasLideranca['Editoria']['nomeEditoria']) ?></p>
-                            <a href="<?php echo $this->Html->url(array('controller' => 'artigos', 'action' => 'ver', $ultimasLideranca['Artigo']['id'], Inflector::slug($ultimasLideranca['Artigo']['titulo']))) ?>"><h4><?php echo $ultimasLideranca['Artigo']['titulo'] ?></h4></a>
+            <?php echo $this->Html->image('http://www.editorcriacao.com.br/gerenciadorEditor/app/webroot/img/fotos_artigos/' . $ultimasSexo['Artigo']['foto']) ?>
+                        <p><?php echo Inflector::stringToUpper($ultimasSexo['Editoria']['nomeEditoria']) ?></p>
+                            <a href="<?php echo $this->Html->url(array('controller' => 'artigos', 'action' => 'ver', $ultimasSexo['Artigo']['id'], Inflector::slug($ultimasSexo['Artigo']['titulo']))) ?>"><h4><?php echo $ultimasSexo['Artigo']['titulo'] ?></h4></a>
 
                     </li>
                 </ul>

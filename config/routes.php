@@ -34,7 +34,7 @@
         Router::connect('/leitor-artigo', array('controller' => 'pages', 'action' => 'display', 'artigo_leitor'));
         Router::connect('/central-do-usuario', array('controller' => 'pages', 'action' => 'display', 'central-do-assinante'));
         Router::connect('/cadastro', array('controller' => 'pages', 'action' => 'display', 'cadastro'));
-        Router::connect('/contato', array('controller' => 'pages', 'action' => 'display', 'contato'));
+        Router::connect('/fale-conosco', array('controller' => 'pages', 'action' => 'display', 'fale-conosco'));
        
 
 /**

@@ -31,21 +31,111 @@ Class ArtigosController extends AppController {
         }
     }
 
-    function ultimasMaterias($id) {
+    function ultimasSaude() {
         $recentes = $this->Artigo->find('first', array(
-                    'conditions' => array('Artigo.site' => 2),
+                    'conditions' => array('Artigo.site' => 2, 'Artigo.editoria_id' => 11),
                     'order' => array('Artigo.created' => 'DESC')
                 ));
 
-        $ultimasMaterias = $this->Artigo->find('first', array(
-                    'conditions' => array('Artigo.site' => 2, 'Artigo.id != ' . $recentes['Artigo']['id'], 'Artigo.editoria_id' => $id),
+        $ultimasSaude = $this->Artigo->find('first', array(
+                    'conditions' => array('Artigo.site' => 2, 'Artigo.id != ' . $recentes['Artigo']['id'], 'Artigo.editoria_id' => 11),
                     'order' => array('Artigo.created' => 'DESC')
                 ));
 
         if (isset($this->params['requested'])) {
-            return $ultimasMaterias;
+            return $ultimasSaude;
         } else {
-            $this->set('ultimasMaterias', $ultimasMaterias);
+            $this->set('ultimasSaude', $ultimasSaude);
+        }
+    }
+
+    function ultimasVisual() {
+        $recentes = $this->Artigo->find('first', array(
+                    'conditions' => array('Artigo.site' => 2, 'Artigo.editoria_id' => 13),
+                    'order' => array('Artigo.created' => 'DESC')
+                ));
+
+        $ultimasVisual = $this->Artigo->find('first', array(
+                    'conditions' => array('Artigo.site' => 2, 'Artigo.editoria_id' => 13),
+                    'order' => array('Artigo.created' => 'DESC')
+                ));
+
+        if (isset($this->params['requested'])) {
+            return $ultimasVisual;
+        } else {
+            $this->set('ultimasVisual', $ultimasVisual);
+        }
+    }
+
+    function ultimasCarro() {
+        $recentes = $this->Artigo->find('first', array(
+                    'conditions' => array('Artigo.site' => 2, 'Artigo.editoria_id' => 17),
+                    'order' => array('Artigo.created' => 'DESC')
+                ));
+
+        $ultimasCarro = $this->Artigo->find('first', array(
+                    'conditions' => array('Artigo.site' => 2,  'Artigo.editoria_id' => 17),
+                    'order' => array('Artigo.created' => 'DESC')
+                ));
+
+        if (isset($this->params['requested'])) {
+            return $ultimasCarro;
+        } else {
+            $this->set('ultimasCarro', $ultimasCarro);
+        }
+    }
+
+    function ultimasEsporte() {
+        $recentes = $this->Artigo->find('first', array(
+                    'conditions' => array('Artigo.site' => 2, 'Artigo.editoria_id' => 19),
+                    'order' => array('Artigo.created' => 'DESC')
+                ));
+
+        $ultimasEsporte = $this->Artigo->find('first', array(
+                    'conditions' => array('Artigo.site' => 2, 'Artigo.editoria_id' => 19),
+                    'order' => array('Artigo.created' => 'DESC')
+                ));
+
+        if (isset($this->params['requested'])) {
+            return $ultimasEsporte;
+        } else {
+            $this->set('ultimasEsporte', $ultimasEsporte);
+        }
+    }
+
+    function ultimasCiencia() {
+        $recentes = $this->Artigo->find('first', array(
+                    'conditions' => array('Artigo.site' => 2, 'Artigo.editoria_id' => 29),
+                    'order' => array('Artigo.created' => 'DESC')
+                ));
+
+        $ultimasCiencia = $this->Artigo->find('first', array(
+                    'conditions' => array('Artigo.site' => 2, 'Artigo.editoria_id' => 29),
+                    'order' => array('Artigo.created' => 'DESC')
+                ));
+
+        if (isset($this->params['requested'])) {
+            return $ultimasCiencia;
+        } else {
+            $this->set('ultimasCiencia', $ultimasCiencia);
+        }
+    }
+
+    function ultimasSexo() {
+        $recentes = $this->Artigo->find('first', array(
+                    'conditions' => array('Artigo.site' => 2, 'Artigo.editoria_id' => 37),
+                    'order' => array('Artigo.created' => 'DESC')
+                ));
+
+        $ultimasCiencia = $this->Artigo->find('first', array(
+                    'conditions' => array('Artigo.site' => 2,  'Artigo.editoria_id' => 37),
+                    'order' => array('Artigo.created' => 'DESC')
+                ));
+
+        if (isset($this->params['requested'])) {
+            return $ultimasCiencia;
+        } else {
+            $this->set('ultimasCiencia', $ultimasCiencia);
         }
     }
 

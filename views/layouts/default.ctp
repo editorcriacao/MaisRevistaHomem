@@ -38,7 +38,7 @@
 
             <div id="header">
                 <div id="header-caixa">
-                    <a href="<?php echo $this->Html->url('/')?>"><?php echo $this->Html->image('logo.png') ?></a>
+                    <a href="<?php echo $this->Html->url('/') ?>"><?php echo $this->Html->image('logo.png') ?></a>
                     <div id="caixa-superior-header">
 
                         <ul id="busca-div">
@@ -85,28 +85,28 @@
                     </div>
                     <div id="caixa-inferior">
                         <ul id="menu-inferior">
-                            <li><a href="<?php echo $this->Html->url('/')?>">HOME</a></li>
-                            <li><a href="<?php echo $this->Html->url('/revista')?>">A REVISTA</a></li>
-                            <li><a href="<?php echo $this->Html->url('/colunistas')?>">COLUNISTAS</a></li>
+                            <li><a href="<?php echo $this->Html->url('/') ?>">HOME</a></li>
+                            <li><a href="<?php echo $this->Html->url('/revista') ?>">A REVISTA</a></li>
+                            <li><a href="<?php echo $this->Html->url('/colunistas') ?>">COLUNISTAS</a></li>
                             <li>
                                 <a href="" id="sub-menu">ASSUNTOS <span class="seta"></span></a>
                                 <ul id="subMenu-menu-inferior">
-                                    <li><a href="<?php echo $this->Html->url(array('controller'=>'editorias', 'action'=>'ver', 11, 'saude-bem-estar'))?>">SAÚDE E BEM-ESTAR</a></li>
-                                    <li><a href="<?php echo $this->Html->url(array('controller'=>'editorias', 'action'=>'ver', 13, 'visual-estilo'))?>">VISUAL E ESTILO</a></li>
-                                    <li><a href="<?php echo $this->Html->url(array('controller'=>'editorias', 'action'=>'ver', 17, 'carros-motos'))?>">CARROS E MOTOS</a></li>
-                                    <li><a href="<?php echo $this->Html->url(array('controller'=>'editorias', 'action'=>'ver', 19, 'esporte-boa-forma'))?>">ESPORTE E BOA FORMA</a></li>
-                                    <li><a href="<?php echo $this->Html->url(array('controller'=>'editorias', 'action'=>'ver', 29, 'ciencia-tecnologia'))?>">CIÊNCIA E TECNOLOGIA</a></li>
-                                    <li><a href="<?php echo $this->Html->url(array('controller'=>'editorias', 'action'=>'ver', 37, 'sexo-mulheres'))?>">SEXO E MULHERES</a></li>
+                                    <li><a href="<?php echo $this->Html->url(array('controller' => 'editorias', 'action' => 'ver', 11, 'saude-bem-estar')) ?>">SAÚDE E BEM-ESTAR</a></li>
+                                    <li><a href="<?php echo $this->Html->url(array('controller' => 'editorias', 'action' => 'ver', 13, 'visual-estilo')) ?>">VISUAL E ESTILO</a></li>
+                                    <li><a href="<?php echo $this->Html->url(array('controller' => 'editorias', 'action' => 'ver', 17, 'carros-motos')) ?>">CARROS E MOTOS</a></li>
+                                    <li><a href="<?php echo $this->Html->url(array('controller' => 'editorias', 'action' => 'ver', 19, 'esporte-boa-forma')) ?>">ESPORTE E BOA FORMA</a></li>
+                                    <li><a href="<?php echo $this->Html->url(array('controller' => 'editorias', 'action' => 'ver', 29, 'ciencia-tecnologia')) ?>">CIÊNCIA E TECNOLOGIA</a></li>
+                                    <li><a href="<?php echo $this->Html->url(array('controller' => 'editorias', 'action' => 'ver', 37, 'sexo-mulheres')) ?>">SEXO E MULHERES</a></li>
                                 </ul>
                             </li>
-                            <li><a href="<?php echo $this->Html->url('/cadastro')?>">CADASTRO</a></li>
-                            <li><a href="<?php echo $this->Html->url('/revista-digital')?>">REVISTA DIGITAL</a></li>
-                            <li><a href="">LOJA VIRTUAL</a></li>
-                            <li><a href="" style="padding-left: 23px; padding-right: 23px;">FALE CONOSCO</a></li>
+                            <li><a href="<?php echo $this->Html->url('/cadastro') ?>">CADASTRO</a></li>
+                            <li><a href="<?php echo $this->Html->url('/revista-digital') ?>">REVISTA DIGITAL</a></li>
+                            <li><a href="<?php echo $this->Html->url('http://www.editorcriacao.com.br/banca-virtual') ?>">LOJA VIRTUAL</a></li>
+                            <li><a href="<?php echo $this->Html->url('/fale-conosco') ?>" style="padding-left: 23px; padding-right: 23px;">FALE CONOSCO</a></li>
                         </ul>
 
                         <div id="banner-superior">
-                            <?php echo $this->element('anuncios')?>
+                        <?php echo $this->element('anuncios') ?>
                         </div>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
 
                         </ul>
 
-                                <div id="linha-divisao-latera"></div>
+                        <div id="linha-divisao-latera"></div>
                         <ul id="banners-lateral">
                             <li><br/><br/><br/></li>
                             <li><?php echo $this->element('anuncio-lateral') ?></li>
@@ -164,6 +164,13 @@
                 </ul>
             </div>
         </div>
-
+        <div style="background-image: url(img/bg-fundo.png); width: 100px; height: 20px; position: relative; top: 17px; z-index: 100">
+        </div>
+        <div style="background-image: url(img/bg-fundo.png); position: relative; left: 0;  width: 100px;">
+            <!-- Site Meter -->
+            <script type="text/javascript" src="http://s46.sitemeter.com/js/counter.js?site=s46maisrevistahomem">
+            </script>
+            <!-- Copyright (c)2009 Site Meter -->
+        </div>
     </body>
 </html>

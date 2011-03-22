@@ -23,6 +23,62 @@ h3{
     color: #333333;
 }
 
+h4 {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: #333333;
+}
+
+/* MATERIA */
+
+#materia-texto{
+    padding: 5px;
+}
+
+#materia-texto h4{
+    font-family: arial;
+    font-size: 17px;
+    color: #888;
+    font-weight: bold;
+    padding-top: 2px;
+
+}
+
+#materia-texto li{
+    list-style: disc inside;
+    font-family: arial;
+    font-size: 12px;
+    padding: 10px 0;
+    margin-left: 9px;
+    line-height: 150%;
+}
+
+#olho-texto{
+    display: block;
+    width: 200px;
+    font-family: arial;
+    font-size: 22px;
+    line-height: 120%;
+    color:#97bf0d;
+    float: right;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#olho-imagem{
+    display: block;
+    float: right;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.legenda-foto{
+    font-size: 9px;
+    color: #999;
+}
+
 p{
     font-family: arial;
     font-size: 12px;
@@ -201,8 +257,7 @@ span{
 
 /* Home - Ultimas Matérias por seção*/
 
-#noticias-por-secao li a h4 {
-    margin-top: 3px;
+#noticias-por-secao li a{
     font-family: Arial,Helvetica,sans-serif;
     font-size: 14px;
     color: #000000;
@@ -210,6 +265,7 @@ span{
 }
 
 #noticias-por-secao li p {
+    margin-top: -5px;
     font-family: Arial,Helvetica,sans-serif;
     font-size: 10px;
     color: #000000;
@@ -233,4 +289,33 @@ span{
 
 #mais-materias a:hover{
     text-decoration: underline;
+}
+
+#caixa-cinza h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #001c35;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+#caixa-cinza p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+textarea{
+    font-family: arial;
+    font-size: 14px;
+    padding: 8px;
+    border: 1px solid #666;
+
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+}
+
+.bold{
+    font-weight: bold;
 }

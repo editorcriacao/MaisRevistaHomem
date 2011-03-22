@@ -1,3 +1,5 @@
-<div id="alertBAD">
-<p><?php echo $message?></p>
+<div id="cover"></div>
+<div id="alertBAD" class="box-msg">
+<span>X</span>
+<p><?php echo $message?>
 </div>
